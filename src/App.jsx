@@ -1,7 +1,7 @@
 import ContactForm from "./component/ContactForm";
 function App() {
   return (
-    <div className="form">
+    <div className="form-wrap">
       <ContactForm />
     </div>
   );
