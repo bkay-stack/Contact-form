@@ -8,10 +8,11 @@
 }
 
 #root {
-  /* display: flex;
+  width: 100%;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh; */
+  /* align-items: center; */
+  height: 100vh;
 }
 
 body {
@@ -22,6 +23,16 @@ body {
   justify-content: center;
   /* align-items: center; */
   height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+image {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 :root {
@@ -37,6 +48,7 @@ body {
 }
 
 .form-wrap {
-  max-width: 1200px;
-  /* outline: 1px solid red; */
+  max-width: 760px;
+  /* width: 100%; */
+  padding: 1rem;
 }

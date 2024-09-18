@@ -3,7 +3,7 @@ form {
   padding: 3rem;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  min-width: 400px;
+
   /* width: 100%; */
 }
 
@@ -16,8 +16,10 @@ form {
   /* outline: 1px solid green; */
 }
 
-.name-values {
+.form-group {
   margin-top: 1.3rem;
+  display: flex;
+  gap: 1rem;
 }
 
 label {
@@ -37,7 +39,7 @@ input {
 
 /* Focus state */
 
-@media (min-width: 780px) {
+@media (min-width: 760px) {
   .name-values {
     display: flex;
     gap: 1rem;

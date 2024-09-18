@@ -9,16 +9,16 @@ const ContactForm = () => {
 
     <form>
       <h1>Contact form</h1>
-      {/* <div className="name-values"> */}
-      {/* <div className="first"> */}
-      <label htmlFor="your name">First Name:</label>
-      <input type="text" name="" id="" />
-      {/* </div> */}
-      {/* <div className="last"> */}
-      <label htmlFor="your name">Last Name:</label>
-      <input type="text" name="" id="" />
-      {/* </div> */}
-      {/* </div> */}
+      <div className="name-values">
+        <div className="first">
+          <label htmlFor="your name">First Name:</label>
+          <input type="text" name="" id="" />
+        </div>
+        <div className="last">
+          <label htmlFor="your name">Last Name:</label>
+          <input type="text" name="" id="" />
+        </div>
+      </div>
       <div className="email">
         <label htmlFor="email">Email:</label>
         <input type="email" name="" id="" />
