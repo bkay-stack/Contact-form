@@ -4,7 +4,7 @@ form {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
-  /* width: 100%; */
+  width: 100%;
 }
 
 form h1 {
@@ -19,7 +19,7 @@ form {
 .form-group {
   margin-top: 1.3rem;
   display: flex;
-  gap: 1rem;
+  /* gap: 1rem; */
 }
 
 label {
@@ -37,6 +37,16 @@ input {
   border-radius: 5px;
 }
 
+.radios {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.msg input {
+  padding: 6.6rem;
+}
+
 /* Focus state */
 
 @media (min-width: 760px) {
@@ -50,5 +60,14 @@ input {
     padding: 3rem;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* max-width: 2200px; */
+  }
+
+  .radios {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    /* width: 100%; */
+    /* outline: 1px solid red; */
   }
 }

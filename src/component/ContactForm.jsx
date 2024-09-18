@@ -23,6 +23,21 @@ const ContactForm = () => {
         <label htmlFor="email">Email:</label>
         <input type="email" name="" id="" />
       </div>
+
+      <label htmlFor="query">Query Type:</label>
+      <div className="radios">
+        {/* <div className="radio-wrap-1"> */}
+        <input type="text" />
+        {/* </div> */}
+
+        {/* <div className="radio-wrap-2"> */}
+        <input type="text" />
+        {/* </div> */}
+      </div>
+      <div className="msg">
+        <label htmlFor="message">Message:</label>
+        <input type="text" />
+      </div>
     </form>
     // </div>
   );
