@@ -22,14 +22,14 @@ form {
   /* gap: 1rem; */
 }
 
-label {
+.label-styling {
   display: block;
   margin-top: 1.3rem;
   font-size: 16px;
   color: var(--green-600);
 }
 
-input {
+.input-styling {
   margin-top: 0.7rem;
   width: 100%;
   padding: 0.9rem 0 0.9rem 0;
@@ -45,6 +45,66 @@ input {
 
 .msg input {
   padding: 6.6rem;
+}
+
+.check-box {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#custom-checkbox {
+  width: 30px;
+  height: 15px;
+  margin-right: 10px;
+  appearance: none; /* Remove default checkbox styling */
+  background-color: var(--white); /* Background color when unchecked */
+
+  border-radius: 5px; /* Optional: Make the checkbox rounded */
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+#custom-checkbox:checked {
+  background-color: var(--green-600);
+}
+
+#custom-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  top: 5px;
+  left: 10px;
+  transform: rotate(45deg); /* Create a checkmark */
+}
+
+.check {
+  margin-right: 10px;
+}
+
+.check-box p {
+  color: var(--green-600);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.btn button {
+  padding: 1.2rem;
+  width: 100%;
+  color: var(--white);
+  background-color: var(--green-600);
+  border: 1px solid;
+  border-radius: 11px;
+  font-size: 19px;
+  letter-spacing: 0.1rem;
 }
 
 /* Focus state */
