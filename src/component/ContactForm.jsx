@@ -34,13 +34,16 @@ const ContactForm = () => {
         Query Type:
       </label>
       <div className="radios">
-        {/* <div className="radio-wrap-1"> */}
-        <input type="text" className="input-styling" />
-        {/* </div> */}
-
-        {/* <div className="radio-wrap-2"> */}
-        <input type="text" className="input-styling" />
-        {/* </div> */}
+        <div className="radio1">
+          {/* <> */}{" "}
+          <input type="radio" id="huey" name="drone" value="huey" checked />
+          <label for="huey">Huey</label>
+          {/* </> */}
+        </div>
+        <div className="radio1">
+          <input type="radio" id="huey" name="drone" value="huey" checked />
+          <label for="huey">Huey</label>
+        </div>
       </div>
       <div className="msg">
         <label htmlFor="message" className="label-styling">
