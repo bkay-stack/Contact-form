@@ -17,6 +17,9 @@
   --white: hsl(0, 0%, 100%);
   --grey-500: hsl(186, 15%, 59%);
   --grey-900: hsl(187, 24%, 22%);
+
+  /* Hover state */
+  --hover-green-600: hsl(169, 77%, 21%);
 }
 
 body {
