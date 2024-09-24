@@ -25,15 +25,15 @@ const ContactForm = () => {
         <div className="name-values">
           <div className="first">
             <label htmlFor="your name" className="label-styling">
-              First Name:
+              Last Name:
             </label>
             <input type="text" name="" className="input-styling" />
           </div>
-          <div className="last">
+          <div className="first">
             <label htmlFor="your name" className="label-styling">
               Last Name:
             </label>
-            <input type="text" name="" id="" className="input-styling" />
+            <input type="text" name="" className="input-styling" />
           </div>
         </div>
         <div className="email">
@@ -46,18 +46,33 @@ const ContactForm = () => {
         <label htmlFor="query" className="label-styling">
           Query Type:
         </label>
-        <div className="radios">
+        <div className="radios-btn">
           <div className="radio1">
-            {/* <> */}{" "}
-            <input type="radio" id="huey" name="drone" value="huey" checked />
-            <label for="huey">Huey</label>
-            {/* </> */}
+            <label htmlFor="myRadioId1" className="label-radio">
+              <input
+                className="radio-input"
+                id="myRadioId1"
+                name="radio"
+                type="radio"
+              />
+              <div className="div-radio-wrap"></div>
+              General Enquiry
+            </label>
           </div>
           <div className="radio1">
-            <input type="radio" id="huey" name="drone" value="huey" checked />
-            <label for="huey">Huey</label>
+            <label htmlFor="myRadioId2" className="label-radio">
+              <input
+                className="radio-input"
+                id="myRadioId2"
+                name="radio"
+                type="radio"
+              />
+              <div className="div-radio-wrap"></div>
+              Support Request
+            </label>
           </div>
         </div>
+
         <div className="msg">
           <label htmlFor="message" className="label-styling">
             Message:
@@ -85,7 +100,7 @@ const ContactForm = () => {
             Submit
           </button>
         </div>
-      </form>{" "}
+      </form>
     </div>
   );
 };

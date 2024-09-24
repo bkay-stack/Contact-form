@@ -1,9 +1,13 @@
+.contact-form {
+  position: relative;
+}
+
 form {
   background-color: var(--white);
   padding: 3rem;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-
+  margin-top: 40px;
   width: 100%;
 }
 
@@ -11,9 +15,10 @@ form h1 {
   color: var(--grey-900);
 }
 
-form {
-  margin-top: 2rem;
-  /* outline: 1px solid green; */
+.first {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .form-group {
@@ -41,7 +46,7 @@ form {
 
 /* Radio styling */
 
-.radios {
+.radios-btn {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -56,32 +61,47 @@ form {
   border-radius: 5px;
   display: flex;
   align-items: center;
+  justify-content: left;
 }
 
-.radio1 input {
-  margin-left: 1rem;
-  appearance: none;
+.label-radio {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 10px;
+}
 
+.radio-input {
+  display: none;
+}
+
+.div-radio-wrap {
+  width: 1.25em;
+  height: 1.2em;
+  border: 2px solid #d8e4e2;
   border-radius: 50%;
-  width: 16px;
-  height: 16px;
-
-  border: 2px solid var(--grey-500);
-  transition: 0.2s all linear;
-  margin-right: 5px;
-
-  position: relative;
-  top: 4px;
+  margin-right: 10px;
+  margin-left: 10px;
+  box-sizing: border-box;
+  padding: 2px;
 }
 
-.radio1 input:checked {
-  border: 5px solid var(--green-600);
+.div-radio-wrap::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: var(--green-600);
+  border-radius: 50%;
+
+  transform: scale(0);
+  transition: transform 0.15s;
 }
 
-.radio1 label {
-  margin-right: 15px;
-  line-height: 32px;
+.radio-input:checked + .div-radio-wrap::after {
+  transform: scale(1);
 }
+
 /* Radio styling */
 
 textarea {
@@ -153,6 +173,15 @@ textarea {
 }
 
 /* Focus state */
+.input-styling:focus {
+  border: none;
+  outline: 1px solid var(--green-600);
+}
+
+textarea:focus {
+  outline: 2px solid var(--green-600);
+  border: none;
+}
 .radio1:hover {
   border: 1px solid var(--green-600);
   cursor: pointer;
@@ -185,6 +214,7 @@ textarea {
   max-width: 440px;
   width: 75%;
   border-radius: 12px;
+
   display: none;
 }
 
@@ -206,7 +236,7 @@ textarea {
 
 /* Active */
 
-@media (min-width: 760px) {
+@media (min-width: 650px) {
   .name-values {
     display: flex;
     gap: 1rem;
@@ -220,10 +250,11 @@ textarea {
     /* max-width: 2200px; */
   }
 
-  .radios {
+  .radios-btn {
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
+    transition: all ease-in-out;
     /* width: 100%; */
     /* outline: 1px solid red; */
   }
