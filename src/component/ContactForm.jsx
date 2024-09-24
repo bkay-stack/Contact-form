@@ -1,8 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import "./contact.styles.css";
-import iconImg from "../assets/images/icon-radio-selected.svg";
-import iconCheck from "../assets/images/icon-checkbox-check.svg";
 import iconSuccess from "../assets/images/icon-success-check.svg";
 const ContactForm = () => {
   const handleSubmit = () => {
@@ -11,6 +9,7 @@ const ContactForm = () => {
 
   return (
     <div className="contact-form">
+      {/* Pop up */}
       <div className="pop-up">
         <div className="content-wrap">
           <div className="sent">
@@ -21,7 +20,9 @@ const ContactForm = () => {
         </div>
       </div>
       <form>
+        {/* Header */}
         <h1>Contact form</h1>
+        {/* Input fields */}
         <div className="name-values">
           <div className="first">
             <label htmlFor="your name" className="label-styling">
@@ -46,6 +47,7 @@ const ContactForm = () => {
         <label htmlFor="query" className="label-styling">
           Query Type:
         </label>
+        {/* Radio btn */}
         <div className="radios-btn">
           <div className="radio1">
             <label htmlFor="myRadioId1" className="label-radio">
@@ -72,7 +74,7 @@ const ContactForm = () => {
             </label>
           </div>
         </div>
-
+        {/* Msg */}
         <div className="msg">
           <label htmlFor="message" className="label-styling">
             Message:
@@ -95,6 +97,7 @@ const ContactForm = () => {
           <p> I consent to being contacted by the team</p>
         </div>
 
+        {/* Sunmit btn */}
         <div className="btn">
           <button type="submit" onClick={handleSubmit}>
             Submit
