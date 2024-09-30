@@ -4,8 +4,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
-  /* font-family: "Inter", sans-serif; */
 }
 
 :root {
@@ -40,16 +38,16 @@ image {
   height: auto;
 }
 
-.form-wrap {
-  padding: 1rem;
-  max-width: 1700px;
-  display: flex;
-}
-
 #root {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
 
-  /* height: 100vh; */
+.contact-form {
+  /* width: 100%; */
+  max-width: 550px;
 }

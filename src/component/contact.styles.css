@@ -1,11 +1,12 @@
 .contact-form {
   position: relative;
+  outline: 1px solid rebeccapurple;
 }
 
 /* Success styling  */
 .pop-up {
   position: absolute;
-  top: 6%;
+  top: -7%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 1.7rem;
@@ -14,8 +15,6 @@
   max-width: 440px;
   width: 75%;
   border-radius: 12px;
-
-  display: none;
 }
 
 .pop-up p {
@@ -238,11 +237,17 @@ textarea:focus {
 .error-msg {
   color: var(--red);
   margin: 5px;
+  /* outline: 1px solid var(--red); */
+}
+.input-styling.error,
+textarea.error,
+.radio1.error {
+  border: 1px solid var(--red);
 }
 
 /* Active */
 
-@media (min-width: 650px) {
+@media (min-width: 1050px) {
   .name-values {
     display: flex;
     gap: 1rem;
@@ -253,7 +258,6 @@ textarea:focus {
     padding: 3rem;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    /* max-width: 2200px; */
   }
 
   .radios-btn {
@@ -261,7 +265,5 @@ textarea:focus {
     flex-direction: row;
     gap: 1.5rem;
     transition: all ease-in-out;
-    /* width: 100%; */
-    /* outline: 1px solid red; */
   }
 }
