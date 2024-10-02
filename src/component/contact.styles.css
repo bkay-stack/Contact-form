@@ -247,7 +247,7 @@ textarea.error,
 
 /* Active */
 
-@media (min-width: 1050px) {
+@media (min-width: 650px) {
   .name-values {
     display: flex;
     gap: 1rem;
