@@ -124,7 +124,7 @@ textarea {
   padding: 1rem;
   width: 100%;
   border: 1px solid var(--grey-500);
-  /* margin-top: 0.6rem; */
+  margin-top: 0.6rem;
   border-radius: 5px;
 }
 
